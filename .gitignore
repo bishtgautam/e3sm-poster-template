@@ -1,0 +1,11 @@
+*.aux
+*.log
+*.nat
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+acme_beamer_poster_template.pdf
+

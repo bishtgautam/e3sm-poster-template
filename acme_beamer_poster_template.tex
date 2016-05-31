@@ -1,0 +1,97 @@
+\documentclass[final,t]{beamer}
+\mode<presentation>
+{
+\usetheme{acmeposter}
+}
+
+% additional settings
+\setbeamerfont{itemize}{size=\normalsize}
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+
+\newcommand{\ACMELarge}{\fontsize{72}{86}\selectfont}
+\newcommand{\ACMELARGE}{\fontsize{80}{96}\selectfont}
+\newcommand{\ACMEHuge}{\fontsize{144}{172}\selectfont}
+\newcommand{\ACMEHUGE}{\fontsize{256}{312}\selectfont}
+
+\usepackage[orientation=landscape,size=custom,width=122,height=122,scale=1.2]{beamerposter}
+
+
+\LeadAuthorContactInfo{
+  Institution or Organization \\
+  \vspace{0.5ex}
+  (555) 555-1234 \\
+  \vspace{0.5ex}
+  staff.member@email.gov \\
+}
+
+\LeadAuthor{
+  STAFF MEMBER
+}
+
+\LeadAuthorTitle{
+  TITLE
+}
+
+\title{\ACMEHuge Poster Title Here}
+\author{\ACMELARGE
+  Author Name(s) Here
+}
+
+\institute{ 
+  Institution or Organization \\
+  (555) 555-1234 \\
+  staff.member@email.gov \\
+}
+
+
+\renewcommand*{\familydefault}{\sfdefault} % Change family default to sans serif
+\renewcommand*\sfdefault{ppl}                    % Palatino font
+ 
+
+\begin{document}
+\begin{frame}[fragile]{}
+
+  \LARGE
+  \begin{columns}[t]
+
+    % =========================================================================
+    %                     COLUMN - I
+    % =========================================================================
+
+    % Add some space
+    \begin{column}{0.01\linewidth}
+    \end{column}
+
+    \begin{column}{0.48\linewidth}
+      \begin{block}{\ACMELarge Objective}
+      \end{block}
+      
+      \begin{block}{\ACMELarge Approach}
+      \end{block}
+    \end{column}
+
+    % =========================================================================
+    %                     COLUMN - II
+    % =========================================================================
+
+    % Add a space between columns
+    \begin{column}{0.01\linewidth}
+    \end{column}
+
+    \begin{column}{0.48\linewidth}
+      \begin{block}{\ACMELarge Result}
+      \end{block}
+      
+      \begin{block}{\ACMELarge Impact}
+      \end{block}
+
+    \end{column}
+    
+  \end{columns}
+
+\end{frame}
+
+\end{document}
+
+
