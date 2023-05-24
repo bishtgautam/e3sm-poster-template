@@ -1,7 +1,10 @@
+% Branched from Gautam Bisht repo - https://github.com/bishtgautam/e3sm-poster-template
+% Modified by Eva Sinha May 24, 2023
+
 \documentclass[final,t]{beamer}
 \mode<presentation>
 {
-\usetheme{acmeposter}
+\usetheme{e3smposter}
 }
 
 % additional settings
@@ -9,13 +12,12 @@
 \setbeamerfont{itemize/enumerate body}{size=\normalsize}
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
 
-\newcommand{\ACMELarge}{\fontsize{72}{86}\selectfont}
-\newcommand{\ACMELARGE}{\fontsize{80}{96}\selectfont}
-\newcommand{\ACMEHuge}{\fontsize{144}{172}\selectfont}
-\newcommand{\ACMEHUGE}{\fontsize{256}{312}\selectfont}
+\newcommand{\EEESMLarge}{\fontsize{72}{86}\selectfont}
+\newcommand{\EEESMLARGE}{\fontsize{80}{96}\selectfont}
+\newcommand{\EEESMHuge}{\fontsize{144}{172}\selectfont}
+\newcommand{\EEESMHUGE}{\fontsize{256}{312}\selectfont}
 
 \usepackage[orientation=landscape,size=custom,width=122,height=122,scale=1.2]{beamerposter}
-
 
 \LeadAuthorContactInfo{
   Institution or Organization \\
@@ -26,27 +28,26 @@
 }
 
 \LeadAuthor{
-  STAFF MEMBER
+  \textbf{Staff Member}
 }
 
 \LeadAuthorTitle{
-  TITLE
+  Title
 }
 
-\title{\ACMEHuge Poster Title Here}
-\author{\ACMELARGE
+\title{\EEESMHuge Poster Title Here}
+\author{\EEESMLARGE
   Author Name(s) Here
 }
 
 
 \renewcommand*{\familydefault}{\sfdefault} % Change family default to sans serif
-\renewcommand*\sfdefault{ppl}                    % Palatino font
+%\renewcommand*\sfdefault{ppl}             % Palatino font
  
 
 \begin{document}
 
-\usebackgroundtemplate{\includegraphics[height=44in,width=48in]{logo/e3sm-background-image.jpeg}}
-
+\usebackgroundtemplate{\includegraphics{logo/E3SM_background_image.png}}
 
 \begin{frame}[fragile]{}
 
@@ -63,11 +64,20 @@
     \end{column}
 
     \begin{column}{0.48\linewidth}
-      \begin{block}{\ACMELarge Hypothesis}
+      % ==============================================
+      %                Top Left Block
+      % ==============================================
+      \begin{block}{\EEESMLarge HYPOTHESIS}
       \end{block}
       
-      \begin{block}{\ACMELarge Developments Required}
+      [add “Objective” text and any supporting artwork in this location…]
+
+      % ==============================================
+      %                Bottom Left Block
+      % ==============================================
+      \begin{block}{\EEESMLarge DEVELOPMENT REQUIRED}
       \end{block}
+      [add “Approach” text and any supporting artwork in this location…]
     \end{column}
 
     % =========================================================================
@@ -79,11 +89,18 @@
     \end{column}
 
     \begin{column}{0.48\linewidth}
-      \begin{block}{\ACMELarge Result}
+      % ==============================================
+      %                Top Right Block
+      % ==============================================
+      \begin{block}{\EEESMLarge RESULT}
       \end{block}
-      
-      \begin{block}{\ACMELarge Expected Impact}
+
+      % ==============================================
+      %                Bottom Right Block
+      % ==============================================
+      \begin{block}{\EEESMLarge EXPECTED IMPACT}
       \end{block}
+      [add “Impact” text and any supporting artwork in this location…]
 
     \end{column}
     
@@ -92,5 +109,3 @@
 \end{frame}
 
 \end{document}
-
-
