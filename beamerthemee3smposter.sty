@@ -1,7 +1,7 @@
-\ProvidesPackage{beamerthemeacmeposter} 
+\ProvidesPackage{beamerthemee3smposter} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\selectcolormodel{cmyk}
+\selectcolormodel{HTML}
 \mode<presentation>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,21 +24,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % custom colors
 
+\definecolor{i6bluetext}{HTML}{3264A0} 
+\definecolor{i6greentext}{HTML}{357A4D} 
+
 \setbeamercolor{headline}{fg=black,bg=white}
 \setbeamercolor{title in headline}{fg=black}
 \setbeamercolor{author in headline}{fg=black}
 \setbeamercolor{institute in headline}{fg=black}
-
 
 % footline colors and fonts
 \setbeamercolor{footline}{fg=black}
 \setbeamerfont{footline}{size=\large}
 
 % block environment
-\definecolor{i6colorblockbg}{HTML}{1a70d9}  % Block title color : BLUE
-\definecolor{i6colorblockbody}{HTML}{d5eff1}  % Block body
-\setbeamercolor*{block body}{fg=black,bg=i6colorblockbody}
-\setbeamercolor*{block title}{fg=white,bg=i6colorblockbg}
+\setbeamercolor*{block body}{fg=black,bg=white}
+\setbeamercolor*{block title}{fg=i6greentext,bg=white}
 \setbeamerfont{block title}{size=\large,series=\bf}
 
 \setbeamertemplate{itemize items}[triangle]
@@ -65,51 +65,53 @@
 
 \setbeamertemplate{headline}{  
   \leavevmode
-
-
-  \begin{beamercolorbox}[wd=\paperwidth]{headline}
     
-    \includegraphics[height=9in,width=48in]{logo/e3sm-header-image.jpeg}
+    \includegraphics[height=3.33in,width=48in]{logo/E3SM_header_image.png}
 
     \begin{columns}[T]
       % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-      \begin{column}{0.1\paperwidth}
-        \vspace{-15cm}
-        \hspace{2cm}\usebeamercolor{title in headline}{}
+      \begin{column}{0.03\paperwidth}
+        \vspace{0cm}
+       % \hspace{2cm}\usebeamercolor{title in headline}{}
       \end{column}
 
 
-      \begin{column}{0.8\paperwidth}
+      \begin{column}{0.94\paperwidth}
 
         \begin{flushleft}
-          \vspace{-16cm}
+          \vspace{0cm}
           \usebeamercolor{title in headline}{\color{fg}\textbf{{\inserttitle}}\\[1ex]}
           \vspace{1cm}
-          \usebeamercolor{author in headline}{\color{fg}\textbf{\insertauthor}\\[1ex]}
+          \usebeamercolor{author in headline}{\color{fg}\insertauthor\\[1ex]}
         \end{flushleft}
       \end{column}
 
-      \begin{column}{0.1\paperwidth}
+      \begin{column}{0.03\paperwidth}
       \end{column}
     \end{columns}
-  \end{beamercolorbox}
+
   
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{footline}{
 
-  \includegraphics[height=4in,width=48in]{logo/e3sm-footer-image.jpeg}
+  \includegraphics[height=4.5in,width=48in]{logo/E3SM_footer_image.png}
 
   \begin{columns}[T]
     % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    \begin{column}{0.29\paperwidth}
+    \begin{column}{0.45\paperwidth}
     \end{column}
 
-
-    \begin{column}{0.18\paperwidth}
-      \vspace{-6.3cm}
+    \begin{column}{0.1\paperwidth}
+    \vspace{-4.5cm} 
+    \Large \textcolor{i6bluetext}{\textbf{e3sm.org}}
+    \end{column}
+    
+    \begin{column}{0.14\paperwidth}
+      \vspace{-4.5cm}
       \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
+        \normalsize
         For additional information, contact: \\
         \vspace{1ex}
         \insertLeadAuthor \\
@@ -119,18 +121,14 @@
     \end{column}
 
     \begin{column}{0.14\paperwidth}
-      \vspace{-6cm}
+      \vspace{-4.5cm}
       \begin{beamercolorbox}[ht=4ex,leftskip=1cm,rightskip=1cm]{footline}%
+        \normalsize
         \insertLeadAuthorContactInfo
       \end{beamercolorbox}
     \end{column}
 
     \begin{column}{0.1\paperwidth}
-    \end{column}
-
-    \begin{column}{0.1\paperwidth}
-    \vspace{-6cm}
-    e3sm.org
     \end{column}
 
     \begin{column}{0.19\paperwidth}
